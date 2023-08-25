@@ -1,3 +1,9 @@
+Instrucciones:
+1. npm install
+2. npm run typeorm migration:run ('Para ambiertar la tabla de cartas de base de datos')
+3. npm run start:dev ('para arrancar la aplicacion de servidor')
+4. http://localhost:3000/tablero/:numero ('numero de tableros a crear)
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>

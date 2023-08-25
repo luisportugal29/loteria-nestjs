@@ -8,10 +8,9 @@ export class TableroController {
     constructor(private tableroService: TableroService) {}
 
     @Post('/:numberOfDecks')
-    async generateRandomDecks(@Param('numberOfDecks') numberOfDecks: string) {
+    generateRandomDecks(@Param('numberOfDecks') numberOfDecks: string) {
         
-        const tableros = await  this.tableroService.generateRandomDecks(parseInt(numberOfDecks));
+        return this.tableroService.generateRandomDecks(parseInt(numberOfDecks));
 
-        return tableros;
     }
 }
